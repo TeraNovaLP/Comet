@@ -1,0 +1,21 @@
+sudo: required
+
+matrix:
+    include:
+        - os: linux
+          dist: trusty
+          env: CC=clang CXX=clang++ npm_config_clang=1
+
+install:
+    - npm install npm -g
+    - npm install
+    - npm prune
+
+cache:
+    directories:
+        - node_modules
+
+script:
+    - node --version
+    - npm --version
+    - npm run-script release
