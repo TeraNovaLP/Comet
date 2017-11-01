@@ -1,0 +1,51 @@
+{
+  "name": "playperium-comet",
+  "productName": "PlayPerium Comet",
+  "description": "Comet APP",
+  "version": "0.1.0",
+  "author": {
+    "name": "PlayPerium.eu",
+    "email": "info@playperium.eu"
+  },
+  "copyright": "© 2017, PlayPerium.eu",
+  "homepage": "https://playperium.eu",
+  "license": "MIT",
+  "main": "app/main.js",
+  "build": {
+    "appId": "eu.playperium.comet",
+    "artifactName": "playperium-comet-setup.${ext}",
+    "asar": true,
+    "files": [
+      "app/**/*"
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "license": "eula.txt"
+    },
+    "linux": {
+      "target": [
+        "deb",
+        "tar.gz"
+      ]
+    }
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cli": "^1.4.0",
+    "gulp-typescript": "^3.2.3",
+    "typescript": "^2.5.3",
+    "electron": "^1.7.9",
+    "electron-builder": "^19.43.0"
+  },
+  "scripts": {
+    "release": "gulp build",
+    "start": "gulp start",
+    "clear": "gulp clear"
+  }
+}
