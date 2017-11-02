@@ -15,6 +15,7 @@
     "appId": "eu.playperium.comet",
     "artifactName": "playperium-comet-setup.${ext}",
     "asar": true,
+    "publish": null,
     "files": [
       "app/**/*"
     ],
