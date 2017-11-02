@@ -19,7 +19,7 @@ gulp.task("start", ["compile", "copy"], function() {
 })
 
 gulp.task("build", ["compile", "copy"], function() {
-    builder.build("--publish=never");
+    builder.build();
 })
 
 gulp.task("compile", function() {
