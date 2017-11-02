@@ -1,6 +1,6 @@
 'use strict'
 
-const gulp = require('gulp');
+const gulp = require("gulp");
 const ts = require("gulp-typescript");
 const del = require("del");
 const childProcess = require("child_process");
@@ -9,28 +9,28 @@ const builder = require("electron-builder");
 
 const tsProject = ts.createProject("tsconfig.json");
 
-gulp.task('start', ['compile', 'copy'], function() {
-    childProcess.spawn(electron, ['app/main.js'], {
-        stdio: 'inherit'
+gulp.task("start", ["compile", "copy"], function() {
+    childProcess.spawn(electron, ["app/main.js"], {
+        stdio: "inherit"
     })
-    .on('close', function () {
+    .on("close", function () {
         process.exit();
     });
 })
 
-gulp.task('build', ['compile', 'copy'], function() {
-    builder.build();
+gulp.task("build", ["compile", "copy"], function() {
+    builder.build("--publish=never");
 })
 
-gulp.task('compile', function() {
+gulp.task("compile", function() {
     return tsProject.src().pipe(tsProject()).js.pipe(gulp.dest("app"));
 })
 
-gulp.task('copy', function() {
-    return gulp.src(['src/**/*', '!src/**/*.ts']).pipe(gulp.dest('app'));
+gulp.task("copy", function() {
+    return gulp.src(["src/**/*", "!src/**/*.ts"]).pipe(gulp.dest("app"));
 })
 
-gulp.task('clear', function() {
+gulp.task("clear", function() {
     del("app/**/*");
     del("dist/**/*");
 })
