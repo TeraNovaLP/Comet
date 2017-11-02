@@ -2,6 +2,7 @@
 
 const gulp = require('gulp');
 const ts = require("gulp-typescript");
+const del = require("del");
 const childProcess = require("child_process");
 const electron = require("electron");
 const builder = require("electron-builder");
@@ -27,4 +28,9 @@ gulp.task('compile', function() {
 
 gulp.task('copy', function() {
     return gulp.src(['src/**/*', '!src/**/*.ts']).pipe(gulp.dest('app'));
+})
+
+gulp.task('clear', function() {
+    del("app/**/*");
+    del("dist/**/*");
 })

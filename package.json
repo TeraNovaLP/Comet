@@ -33,15 +33,15 @@
       ]
     }
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
+    "del": "^3.0.0",
+    "electron": "^1.7.9",
+    "electron-builder": "^19.43.0",
     "gulp": "^3.9.1",
     "gulp-cli": "^1.4.0",
     "gulp-typescript": "^3.2.3",
-    "typescript": "^2.5.3",
-    "electron": "^1.7.9",
-    "electron-builder": "^19.43.0"
+    "typescript": "^2.5.3"
   },
   "scripts": {
     "release": "gulp build",
