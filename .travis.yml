@@ -18,4 +18,4 @@ cache:
 script:
     - node --version
     - npm --version
-    - npm run-script release
+    - npm run-script build

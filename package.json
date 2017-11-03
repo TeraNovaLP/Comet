@@ -45,7 +45,7 @@
     "typescript": "^2.5.3"
   },
   "scripts": {
-    "release": "gulp build",
+    "build": "gulp build",
     "start": "gulp start",
     "clear": "gulp clear"
   }
