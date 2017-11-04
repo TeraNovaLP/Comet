@@ -46,6 +46,7 @@
   },
   "scripts": {
     "build": "gulp build",
+    "cbuild": "gulp cbuild",
     "start": "gulp start",
     "clear": "gulp clear"
   }

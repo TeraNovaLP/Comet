@@ -22,6 +22,10 @@ gulp.task("build", ["compile", "copy"], function() {
     builder.build();
 })
 
+gulp.task("cbuild", ["clear", "compile", "copy"], function() {
+    builder.build();
+})
+
 gulp.task("compile", function() {
     return tsProject.src().pipe(tsProject()).js.pipe(gulp.dest("app"));
 })
