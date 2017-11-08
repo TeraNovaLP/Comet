@@ -22,7 +22,7 @@ gulp.task("build", ["compile", "copy"], function() {
     builder.build();
 })
 
-gulp.task("cbuild", ["clear", "compile", "copy"], function() {
+gulp.task("cbuild", ["clean", "compile", "copy"], function() {
     builder.build();
 })
 
@@ -34,7 +34,7 @@ gulp.task("copy", function() {
     return gulp.src(["src/**/*", "!src/**/*.ts"]).pipe(gulp.dest("app"));
 })
 
-gulp.task("clear", function() {
+gulp.task("clean", function() {
     del("app/**/*");
     del("dist/**/*");
 })
