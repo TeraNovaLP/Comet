@@ -13,6 +13,10 @@ npm install
 ```
 That's it! You have a full running Comet repository and can begin to work on your app.
 
+## Debugging and Releasing
+
+The Documentation can you find [there](https://github.com/PlayPerium/Comet/wiki/Debugging-and-Releasing).
+
 ## License
 
 [MIT](https://github.com/PlayPerium/Comet/blob/master/LICENSE)
