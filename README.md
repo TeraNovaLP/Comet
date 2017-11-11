@@ -4,8 +4,8 @@
 
 ## Download
 
-### [Stable Build](https://github.com/PlayPerium/Comet/releases) (Recommended)
-### [Latest Build](https://github.com/PlayPerium/Comet/archive/master.zip)
+* [Stable Build](https://github.com/PlayPerium/Comet/releases) (Recommended)
+* [Latest Build](https://github.com/PlayPerium/Comet/archive/master.zip)
 
 ***
 
@@ -18,6 +18,6 @@
 
 ## License
 
-[MIT](https://github.com/PlayPerium/Comet/blob/master/LICENSE)
+* [MIT](https://github.com/PlayPerium/Comet/blob/master/LICENSE)
 
 ***
