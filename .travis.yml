@@ -19,3 +19,7 @@ script:
     - node --version
     - npm --version
     - npm run-script build
+
+branches:
+    only:
+    - master
