@@ -3,7 +3,7 @@
 
 Comet is a customizable Electron, Typescript boilerplate for building fast, cross-platform desktop apps.
 
-## Installation
+## Quick Start
 
 1. Download and Install [NodeJS](https://nodejs.org).
 2. Download the latest stable Comet release and unzip it.
@@ -13,9 +13,10 @@ npm install
 ```
 That's it! You have a full running Comet repository and can begin to work on your app.
 
-## Debugging and Releasing
+## Documentation
 
-The Documentation can you find [there](https://github.com/PlayPerium/Comet/wiki/Debugging-and-Releasing).
+* [Comet Documentation](https://github.com/PlayPerium/Comet/wiki)
+* [Electron Documentation](https://electron.atom.io/docs/)
 
 ## License
 
