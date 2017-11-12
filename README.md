@@ -7,7 +7,7 @@ Comet is a customizable Electron, Typescript boilerplate for building fast, cros
 
 1. Download and Install [NodeJS](https://nodejs.org).
 2. Download the latest stable Comet release and unzip it.
-3. Go into the folder and open a Command prompt then run:
+3. Go into the unzipped folder and open a Command prompt then run:
 ```
 npm install
 ```
