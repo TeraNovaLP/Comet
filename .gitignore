@@ -2,7 +2,3 @@
 /app/
 /dist/
 /node_modules/
-
-# Idea
-/.vscode/
-/.vs/
