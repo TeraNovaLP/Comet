@@ -5,6 +5,10 @@ var mainForm;
 
 app.on('ready', () => {
     mainForm = new BrowserWindow({
+        webPreferences: {
+            nodeIntegrationInWorker: true
+        },
+
         width: 1200,
         height: 700,
         minWidth: 1200,
