@@ -9,7 +9,7 @@ Comet is a customizable Electron, Typescript boilerplate for building fast, cros
 
 1. Download and Install [NodeJS](https://nodejs.org) (LTS version recommended).
 2. Download the latest stable [Comet release](https://github.com/PlayPerium/Comet/releases) and unzip it.
-3. Go into the unzipped folder and open a Command prompt then run:
+3. Go in the unzipped folder and open a command prompt there, and then execute:
 ```
 npm install
 ```
