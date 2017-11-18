@@ -1,4 +1,4 @@
-'use strict'
+"use strict";
 
 const gulp = require("gulp");
 const ts = require("gulp-typescript");
@@ -16,7 +16,7 @@ gulp.task("start", ["compile", "copy"], function() {
     .on("close", function () {
         process.exit();
     });
-})
+});
 
 gulp.task("build", ["compile", "copy"], function() {
     builder.build();
