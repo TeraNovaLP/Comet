@@ -1,7 +1,7 @@
 import {app, BrowserWindow, Menu} from 'electron';
 import {shell} from 'electron';
 
-var mainForm;
+let mainForm;
 
 app.on('ready', () => {
     mainForm = new BrowserWindow({
@@ -14,40 +14,48 @@ app.on('ready', () => {
         minWidth: 1200,
         minHeight: 700,
         center: true,
-        title: "PlayPerium Comet"
-    })
+        title: 'PlayPerium Comet'
+    });
 
     mainForm.loadURL(`file://${__dirname}/main.html`);
     setFormMenu();
-})
+});
 
 app.once('window-all-closed', app.quit);
 
 function setFormMenu() {
-    var formMenu = [
+    const formMenu = [
     {
-        label: "Comet",
+        label: 'Comet',
         submenu: [
             {
-                label: "Developer Tools",
-                click() {mainForm.toggleDevTools();}
+                label: 'Developer Tools',
+                click()
+
+                {mainForm.toggleDevTools();}
             },
             {
-                label: "Exit",
-                click() {app.quit();}
+                label: 'Exit',
+                click()
+
+                {app.quit();}
             }
         ]
     },
     {
-        label: "Help",
+        label: 'Help',
         submenu: [
             {
-                label: "Documentation",
-                click() {shell.openExternal('https://github.com/PlayPerium/Comet/wiki');}
+                label: 'Documentation',
+                click()
+
+                {shell.openExternal('https://github.com/PlayPerium/Comet/wiki');}
             },
             {
-                label: "License",
-                click() {shell.openExternal('https://github.com/PlayPerium/Comet/blob/master/LICENSE');}
+                label: 'License',
+                click()
+                
+                {shell.openExternal('https://github.com/PlayPerium/Comet/blob/master/LICENSE');}
             }
         ]
     },
