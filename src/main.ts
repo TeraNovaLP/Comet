@@ -42,6 +42,10 @@ function setFormMenu() {
         label: "Help",
         submenu: [
             {
+                label: "Documentation",
+                click() {shell.openExternal('https://github.com/PlayPerium/Comet/wiki');}
+            },
+            {
                 label: "License",
                 click() {shell.openExternal('https://github.com/PlayPerium/Comet/blob/master/LICENSE');}
             }
