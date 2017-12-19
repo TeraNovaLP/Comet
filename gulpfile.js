@@ -6,7 +6,6 @@ const del = require("del");
 const childProcess = require("child_process");
 const electron = require("electron");
 const builder = require("electron-builder");
-const tslint = require("gulp-tslint");
 
 const tsProject = ts.createProject("tsconfig.json");
 
