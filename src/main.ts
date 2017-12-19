@@ -1,9 +1,9 @@
-import {app, BrowserWindow, Menu} from 'electron';
-import {shell} from 'electron';
+import {app, BrowserWindow, Menu} from "electron";
+import {shell} from "electron";
 
 let mainForm;
 
-app.on('ready', () => {
+app.on("ready", () => {
     mainForm = new BrowserWindow({
         webPreferences: {
             nodeIntegrationInWorker: true
@@ -14,48 +14,40 @@ app.on('ready', () => {
         minWidth: 1200,
         minHeight: 700,
         center: true,
-        title: 'PlayPerium Comet'
+        title: "PlayPerium Comet"
     });
 
     mainForm.loadURL(`file://${__dirname}/main.html`);
     setFormMenu();
 });
 
-app.once('window-all-closed', app.quit);
+app.once("window-all-closed", app.quit);
 
 function setFormMenu() {
     const formMenu = [
     {
-        label: 'Comet',
+        label: "Comet",
         submenu: [
             {
-                label: 'Developer Tools',
-                click()
-
-                {mainForm.toggleDevTools();}
+                label: "Developer Tools",
+                click() {mainForm.toggleDevTools(); }
             },
             {
-                label: 'Exit',
-                click()
-
-                {app.quit();}
+                label: "Exit",
+                click() {app.quit(); }
             }
         ]
     },
     {
-        label: 'Help',
+        label: "Help",
         submenu: [
             {
-                label: 'Documentation',
-                click()
-
-                {shell.openExternal('https://github.com/PlayPerium/Comet/wiki');}
+                label: "Documentation",
+                click() {shell.openExternal("https://github.com/PlayPerium/Comet/wiki"); }
             },
             {
-                label: 'License',
-                click()
-                
-                {shell.openExternal('https://github.com/PlayPerium/Comet/blob/master/LICENSE');}
+                label: "License",
+                click() {shell.openExternal("https://github.com/PlayPerium/Comet/blob/master/LICENSE"); }
             }
         ]
     },
