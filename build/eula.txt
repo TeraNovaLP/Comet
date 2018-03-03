@@ -2,7 +2,7 @@
 PlayPerium EULA
 ========================================
 
-Copyright (c) 2017 PlayPerium
+Copyright (c) 2018 PlayPerium
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -24,7 +24,7 @@ SOFTWARE.
 Electron
 ========================================
 
-Copyright (c) 2013-2017 GitHub Inc.
+Copyright (c) 2013-2018 GitHub Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
