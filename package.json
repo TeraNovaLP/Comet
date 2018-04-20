@@ -37,7 +37,7 @@
   "dependencies": {},
   "devDependencies": {
     "del": "^3.0.0",
-    "electron": "^1.8.2",
+    "electron": "^1.8.4",
     "electron-builder": "^20.0.5",
     "gulp": "^3.9.1",
     "gulp-cli": "v2.0.1",

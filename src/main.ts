@@ -9,12 +9,11 @@ app.on("ready", () => {
             nodeIntegrationInWorker: true
         },
 
-        width: 1200,
-        height: 700,
-        minWidth: 1200,
-        minHeight: 700,
         center: true,
-        title: "PlayPerium Comet"
+        minHeight: 700,
+        minWidth: 1200,
+        title: "PlayPerium Comet",
+        width: 1200
     });
 
     mainForm.loadURL(`file://${__dirname}/main.html`);
