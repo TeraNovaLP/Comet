@@ -6,6 +6,7 @@
     "rules": {
         "trailing-comma": false,
         "max-line-length": false,
-        "align": [false, "statements"]
+        "align": [false, "statements"],
+        "object-literal-sort-keys": false
     }
 }
