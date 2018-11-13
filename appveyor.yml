@@ -8,11 +8,12 @@ cache:
   - '%APPDATA%\npm-cache'
   - '%USERPROFILE%\.electron'
 
+image: Visual Studio 2017
+
 init:
   - git config --global core.autocrlf input
 
 install:
-  - ps: Install-Product node 6 x64
   - git reset --hard HEAD
   - npm install npm -g
   - npm install
